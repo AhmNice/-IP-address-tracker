@@ -15,7 +15,7 @@
     src: url(font/Rubik-Bold.ttf);
 }
 main{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
