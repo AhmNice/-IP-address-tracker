@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 59%);
+    font-size: 18px;
+    font-family: rubik;
+}
+@font-face {
+    font-family: rubik;
+    src: url(font/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: rubikBold;
+    src: url(font/Rubik-Bold.ttf);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    height: 40vh;
+    width: 100%;
+    background-image: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+.top h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+.top .search{
+    display: flex;
+    gap: 0px;
+}
+.search input{
+    width: 400px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 15px;
+    outline: none;
+}
+.search button{
+    border-radius:0px 10px 10px 0px ;
+    padding: 8px;
+    border: none;
+    width: 40px;
+    background-color:  hsl(0, 0%, 17%);
+}
+.search button:hover{
+    background-color: hsl(0, 0%, 59%);
+
+}
+.map{
+    position: relative;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+.details{
+    background-color: white;
+    padding: 30px;
+    min-width: 90%;
+    max-width: max-content;
+    position: absolute;
+    top: 0;
+    transform: translate(0, -40%);
+    height: max-content;
+    border-radius: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+#map{
+    height: 100%;
+    width: 100%;
+}
+.ip{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 77%);
+    font-size: 15px;
+}
+.ip_address, .location, .timezone, .isp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0px 20px;
+    text-align: left;
+}
+.divider{
+    width: 1px;
+    height: 100%;
+    background-color: hsl(0, 0%, 77%);
+}
+.ip_address h2, .location h2, .timezone h2, .isp h2{
+    color:  hsl(0, 0%, 17%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: rubikBold;
+    font-size: 22px;
+    text-align: left;
+}
+@media only screen and (max-width:500px){
+    .top{
+        background-image: url(images/pattern-bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 90px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        height: max-content;
+        align-items: center;
+        gap: 10px;
+        transform: translate(0, -20%);
+    }
+    .search input{
+        width: 260px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .ip_address h2, .location h2, .timezone h2, .isp h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .ip_address , .location , .timezone, .isp {
+        color:  hsl(0, 0%, 17%);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: rubikBold;
+        font-size: 22px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:1440px){
+    .details{
+        background-color: white;
+        padding: 30px;
+        min-width: 90%;
+        max-width: max-content;
+        position: absolute;
+        top: 0;
+        transform: translate(0, -40%);
+        height: 140px;
+        border-radius: 10px;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ip_address h2, .location h2, .timezone h2, .isp h2{
+        /* font-size: 15px; */
+        text-align: center;
+    }
+    .ip_address h2, .location h2, .timezone h2, .isp h2{
+        color:  hsl(0, 0%, 17%);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: rubikBold;
+        font-size: 22px;
+        text-align: center;
+    }
+}

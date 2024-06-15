@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <section class="top">
+    <h3>IP Address Tracker</h3>
+    <div class="search">
+      <input type="text" id="ipAddress" placeholder="search for any IP address or domain">
+      <button class="btnsearch" id="search"><img src="images/icon-arrow.svg" alt=""></button>
+    </div>
+  </section>
+  <section class="map">
+    <div id="map"></div>
+    <section class="details">
+      <div class="ip_address">
+        <p class="ip">Ip address</p>
+        <h2 id="ipText"></h2>
+      </div>
+      <div class="divider"></div>
+      <div class="location">
+        <p class="ip">location</p>
+        <h2 id="locationText"></h2>
+      </div>
+      <div class="divider"></div>
+      <div class="timezone">
+        <p class="ip">timezone</p>
+        <h2 id="timezoneText"></h2>
+      </div>
+      <div class="divider"></div>
+      <div class="isp">
+        <p class="ip">isp</p>
+        <h2 id="ispText"></h2>
+      </div>
+    </section>
+    <!-- map container -->
+     
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
