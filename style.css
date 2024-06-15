@@ -21,7 +21,7 @@ main{
     flex-direction: column;
 }
 .top{
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-image: url(images/pattern-bg-desktop.png);
     background-repeat: no-repeat;
