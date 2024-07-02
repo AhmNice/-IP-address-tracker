@@ -62,7 +62,7 @@ main{
 }
 .map{
     position: relative;
-    height: 70vh;
+    height: max-content;
     display: flex;
     justify-content: center;
 }
