@@ -15,7 +15,7 @@
     src: url(font/Rubik-Bold.ttf);
 }
 main{
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ main{
 }
 .map{
     position: relative;
-    height: max-content;
+    height: 65vh;
     display: flex;
     justify-content: center;
 }
